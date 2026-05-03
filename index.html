@@ -3,53 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoria Colaborativa | Agroindústria 2026 EMI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Monitoria Agroindústria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --if-verde: #32a041;
-            --if-vermelho: #bc1622;
-            --bg: #f8f9fa;
-        }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; color: #333; }
-        header { background: var(--if-verde); color: white; padding: 40px 20px; text-align: center; border-bottom: 6px solid var(--if-vermelho); }
-        .container { max-width: 900px; margin: -30px auto 50px; padding: 0 20px; }
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        h2 { color: var(--if-verde); margin-top: 0; display: flex; align-items: center; gap: 10px; }
-        .btn { display: inline-block; background: var(--if-verde); color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; }
-        .aviso { border-left: 5px solid var(--if-vermelho); }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
+        :root { --if-verde: #32a041; --if-vermelho: #bc1622; --bg: #f8f9fa; }
+        body { font-family: sans-serif; background: var(--bg); margin: 0; padding-bottom: 50px; }
+        header { background: var(--if-verde); color: white; text-align: center; padding: 20px; border-bottom: 5px solid var(--if-vermelho); }
+        .card { background: white; margin: 15px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-left: 5px solid var(--if-vermelho); }
+        h2 { color: var(--if-verde); display: flex; align-items: center; gap: 10px; }
+        .urgente { background: #ffebee; color: var(--if-vermelho); padding: 10px; border-radius: 5px; border: 1px solid var(--if-vermelho); margin-top: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { text-align: left; padding: 10px; border-bottom: 1px solid #ddd; }
+        .btn { background: var(--if-verde); color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 0.8em; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1><i class="fas fa-graduation-cap"></i> Monitoria 1º Ano EMI</h1>
-    <p>Projeto de Monitoria Colaborativa</p>
+    <h1><i class="fas fa-user-graduate"></i> Monitoria 1º Ano</h1>
+    <p>Liderança Colaborativa - Agroindústria</p>
 </header>
 
-<div class="container">
-    <div class="card aviso">
-        <h2><i class="fas fa-bullhorn"></i> Avisos da Liderança</h2>
-        <p>Bem-vindos ao nosso site! Aqui organizaremos nossos estudos e monitorias.</p>
+<div class="card">
+    <h2><i class="fas fa-bullhorn"></i> Avisos da Liderança</h2>
+    
+    <div class="urgente">
+        <strong><i class="fas fa-exclamation-triangle"></i> URGENTE:</strong>
+        <p>Prova de Química e Bioquímica ocorrerá no dia 19/05/2026. Estudem!</p>
+    </div>
     </div>
 
-    <div class="card">
-        <h2><i class="fas fa-users"></i> Quadro de Monitores</h2>
-        <table>
-            <thead>
-                <tr><th>Matéria</th><th>Monitor(a)</th><th>Ação</th></tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>História</td>
-                    <td><strong>Carlos</strong></td>
-                    <td><a href="#" class="btn">Ver Resumos</a></td>
-                </tr>
-            </tbody>
+<div class="card">
+    <h2><i class="fas fa-users"></i> Quadro de Monitores</h2>
+    <table>
+        <tr><th>Matéria</th><th>Monitor(a)</th><th>Material</th></tr>
+        
+        <tr>
+            <td>Matemática</td>
+            <td>[Nome do Monitor]</td>
+            <td><a href="#" class="btn">Ver Resumos</a></td>
+        </tr>
         </table>
-    </div>
 </div>
 
 </body>
